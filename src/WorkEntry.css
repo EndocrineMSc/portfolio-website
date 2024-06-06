@@ -1,0 +1,18 @@
+img {
+  margin-top: 1rem;
+  border-radius: 5%;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-top: white;
+  border-top-width: 1px;
+  border-top-style: groove;
+  padding-top: 1rem;
+  font-weight: 300;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
