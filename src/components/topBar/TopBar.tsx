@@ -8,7 +8,7 @@ const TopBar = ({ setMenuVisible }: { setMenuVisible: () => void }) => {
   return (
     <>
       <div className="topbar">
-        <div onClick={setMenuVisible}>
+        <div className="menu-button" onClick={setMenuVisible}>
           <Icon path={mdiMenu} size={2} />
         </div>
       </div>

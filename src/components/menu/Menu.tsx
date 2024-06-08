@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { routes } from '../../route';
 import { useReducer } from 'react';
 import TopBar from '../topBar/TopBar';
+import ToggleSwitch from '../toggleSwitch/ToggleSwitch';
 
 const Menu = () => {
   const [isVisible, toggleVisible] = useReducer((prev) => !prev, false);
@@ -48,6 +49,9 @@ const Menu = () => {
                 >
                   ABOUT
                 </Link>
+              </li>
+              <li>
+                <ToggleSwitch />
               </li>
             </ul>
           </motion.nav>
