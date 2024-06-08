@@ -16,12 +16,12 @@ const WorkEntry = ({
   linkText,
 }: EntryProps) => {
   return (
-    <>
-      <img src={image} alt={title} />
+    <div className="workentry">
       <h3>{title}</h3>
+      <img src={image} alt={title} />
       <div className="description">{description}</div>
       <a href={link}>{linkText}</a>
-    </>
+    </div>
   );
 };
 

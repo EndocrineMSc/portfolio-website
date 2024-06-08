@@ -1,6 +1,5 @@
 #root {
   max-width: 1280px;
-  height: 100vh;
   padding: 0.5rem;
   text-align: left;
   font-family: 'Roboto Slab', serif;
@@ -24,6 +23,6 @@ h1 {
 }
 
 h2 {
-  margin-top: 1rem;
+  margin-top: 0rem;
   font-weight: 400;
 }

@@ -4,15 +4,25 @@ img {
 }
 
 h3 {
-  margin-top: 1rem;
   margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+.description {
+  margin-top: 1rem;
   border-top: white;
   border-top-width: 1px;
   border-top-style: groove;
   padding-top: 1rem;
-  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
-.description {
-  margin-bottom: 1rem;
+.workentry > a {
+  text-decoration: underline solid 1px;
+}
+
+.workentry {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
