@@ -1,5 +1,5 @@
 import './Work.css';
-import WorkEntry from './WorkEntry';
+import WorkEntry from '../../components/workEntry/WorkEntry';
 
 const Work = () => {
   return (

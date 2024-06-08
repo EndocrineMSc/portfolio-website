@@ -1,11 +1,11 @@
-import './Work.css';
 import { Link } from 'react-router-dom';
 import './Menu.css';
 import { useContext } from 'react';
-import { LocationContext } from './App';
+import { LocationContext } from '../../pages/app/App';
 import Icon from '@mdi/react';
 import { mdiClose } from '@mdi/js';
 import { motion, AnimatePresence } from 'framer-motion';
+import { routes } from '../../route';
 
 const Menu = () => {
   const context = useContext(LocationContext);
@@ -28,14 +28,14 @@ const Menu = () => {
         animate={{ opacity: 1, x: 0, backgroundColor: '#000' }}
         exit={{ opacity: 0, x: 200 }}
       >
-        <Link to={location ? location : '/work'} className="abort">
+        <Link to={location ? location : routes.work} className="abort">
           <Icon path={mdiClose} size={2} />
         </Link>
         <ul>
           <li>
             <Link
-              to="/work"
-              className={getHighlightStyle('/work')}
+              to={routes.work}
+              className={getHighlightStyle(routes.work)}
               onClick={handleClick}
             >
               WORK
@@ -43,8 +43,8 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              to="/about"
-              className={getHighlightStyle('/about')}
+              to={routes.about}
+              className={getHighlightStyle(routes.about)}
               onClick={handleClick}
             >
               ABOUT

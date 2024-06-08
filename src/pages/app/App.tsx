@@ -1,7 +1,8 @@
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
-import TopBar from './TopBar';
+import TopBar from '../../components/topBar/TopBar';
 import { useEffect, useState } from 'react';
 import { createContext } from 'react';
+import { routes } from '../../route';
 
 type LocationContextType = {
   location: string;
@@ -11,14 +12,14 @@ type LocationContextType = {
 export const LocationContext = createContext<LocationContextType | null>(null);
 
 const App = () => {
-  const [contextLocation, setContextLocation] = useState<string>('/work');
+  const [contextLocation, setContextLocation] = useState<string>(routes.work);
 
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === '/') {
-      navigate('/work');
+    if (location.pathname === routes.root) {
+      navigate(routes.work);
     }
   }, []);
 
@@ -26,7 +27,7 @@ const App = () => {
     <LocationContext.Provider
       value={{ location: contextLocation, saveLocation: setContextLocation }}
     >
-      {location.pathname !== '/menu' ? <TopBar /> : null}
+      {location.pathname !== routes.menu ? <TopBar /> : null}
       <Outlet />
     </LocationContext.Provider>
   );
