@@ -4,7 +4,6 @@ import WorkEntry from './WorkEntry';
 const Work = () => {
   return (
     <div className="container">
-      <div className="menu"></div>
       <div className="headers">
         <h1>
           <div>SEBASTIAN</div>
@@ -13,10 +12,10 @@ const Work = () => {
         <h2>Web-Developer</h2>
       </div>
       <WorkEntry
-        image="/test_image"
-        title="Test"
-        description="This is a test entry"
-        link="https://itch.io"
+        image="/majinko.png"
+        title="Majinko"
+        description="A larger prototype of a pajinko-like deckbuilder made in Unity using C#. All code was written by me. While working on this passion project, I was able to learn a lot about object-oriented programming."
+        link="https://endocrine-bamsc.itch.io/majinko"
         linkText="itch.io project"
       />
     </div>
