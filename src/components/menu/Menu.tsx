@@ -16,7 +16,7 @@ const Menu = () => {
     return location.pathname === link ? 'highlight' : '';
   };
 
-  const transitionDuration = 0.75;
+  const transitionDuration = 0.5;
 
   return (
     <>
@@ -24,9 +24,9 @@ const Menu = () => {
         {isVisible && (
           <motion.nav
             key="menu"
-            initial={{ opacity: 0.5, x: '100vw' }}
+            initial={{ opacity: 0.5, x: '75%' }}
             animate={{ opacity: 1, x: 0, backgroundColor: '#000' }}
-            exit={{ opacity: 0.5, x: '100vw' }}
+            exit={{ opacity: 0, x: '75%' }}
             transition={{ duration: transitionDuration }}
             className="menu"
           >
