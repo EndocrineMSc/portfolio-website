@@ -1,58 +1,60 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Menu.css';
-import { useContext } from 'react';
-import { LocationContext } from '../../pages/app/App';
 import Icon from '@mdi/react';
 import { mdiClose } from '@mdi/js';
 import { motion, AnimatePresence } from 'framer-motion';
 import { routes } from '../../route';
+import { useReducer } from 'react';
+import TopBar from '../topBar/TopBar';
 
 const Menu = () => {
-  const context = useContext(LocationContext);
-  const location = context?.location;
-  const saveLocation = context?.saveLocation;
+  const [isVisible, toggleVisible] = useReducer((prev) => !prev, false);
+  const location = useLocation();
 
   const getHighlightStyle = (link: string) => {
-    return link === location ? 'highlight' : '';
+    return location.pathname === link ? 'highlight' : '';
   };
 
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const target = event.target as HTMLAnchorElement;
-    if (saveLocation) saveLocation(target.pathname);
-  };
+  const transitionDuration = 0.75;
 
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0, backgroundColor: '#000' }}
-        exit={{ opacity: 0, x: 200 }}
-      >
-        <Link to={location ? location : routes.work} className="abort">
-          <Icon path={mdiClose} size={2} />
-        </Link>
-        <ul>
-          <li>
-            <Link
-              to={routes.work}
-              className={getHighlightStyle(routes.work)}
-              onClick={handleClick}
-            >
-              WORK
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={routes.about}
-              className={getHighlightStyle(routes.about)}
-              onClick={handleClick}
-            >
-              ABOUT
-            </Link>
-          </li>
-        </ul>
-      </motion.div>
-    </AnimatePresence>
+    <>
+      <AnimatePresence>
+        {isVisible && (
+          <motion.nav
+            key="menu"
+            initial={{ opacity: 0.5, x: '100vw' }}
+            animate={{ opacity: 1, x: 0, backgroundColor: '#000' }}
+            exit={{ opacity: 0.5, x: '100vw' }}
+            transition={{ duration: transitionDuration }}
+            className="menu"
+          >
+            <div className="abort" onClick={toggleVisible}>
+              <Icon path={mdiClose} size={2} />
+            </div>
+            <ul>
+              <li onClick={toggleVisible}>
+                <Link
+                  to={routes.work}
+                  className={getHighlightStyle(routes.work)}
+                >
+                  WORK
+                </Link>
+              </li>
+              <li onClick={toggleVisible}>
+                <Link
+                  to={routes.about}
+                  className={getHighlightStyle(routes.about)}
+                >
+                  ABOUT
+                </Link>
+              </li>
+            </ul>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+      <TopBar setMenuVisible={toggleVisible} />
+    </>
   );
 };
 
