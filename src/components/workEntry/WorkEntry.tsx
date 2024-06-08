@@ -18,7 +18,9 @@ const WorkEntry = ({
   return (
     <div className="workentry">
       <h3>{title}</h3>
-      <img src={image} alt={title} />
+      <div className="image-wrap">
+        <img src={image} alt={title} />
+      </div>
       <div className="description">{description}</div>
       <a href={link}>{linkText}</a>
     </div>

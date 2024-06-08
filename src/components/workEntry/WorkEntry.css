@@ -23,6 +23,12 @@ h3 {
 }
 
 .workentry {
+  text-align: justify;
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
+
+.image-wrap {
+  display: flex;
+  justify-content: start;
 }

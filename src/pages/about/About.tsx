@@ -18,9 +18,10 @@ const About = () => {
         such as React, Express, MongoDB, and Node.js.
       </p>
       <p>
-        I am currently building a full-stack project that demonstrates my
-        ability to create dynamic web applications. This projec is an essential
-        part of my portfolio and reflects my technical capabilities.
+        I am currently building a full-stack project (rpg-adventure-journal)
+        that demonstrates my ability to create dynamic web applications. This
+        project is an essential part of my portfolio and reflects my technical
+        capabilities.
       </p>
       <p>
         In addition, I have also explored game development prior to web
