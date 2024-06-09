@@ -2,6 +2,15 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import ToggleSwitch from './ToggleSwitch';
 
+vi.mock('react-i18next', () => ({
+  useTranslation: () => ({
+    i18n: {
+      language: 'en',
+      changeLanguage: vi.fn(),
+    },
+  }),
+}));
+
 describe('ToggleSwitch component', () => {
   it('renders the ToggleSwitch component', () => {
     render(<ToggleSwitch />);

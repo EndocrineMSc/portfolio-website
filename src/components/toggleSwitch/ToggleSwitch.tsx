@@ -1,9 +1,12 @@
 import { motion, spring } from 'framer-motion';
 import { useState } from 'react';
 import './ToggleSwitch.css';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
 const ToggleSwitch = () => {
-  const [isEnglish, setLanguage] = useState(true);
+  const { i18n } = useTranslation();
+  const [isEnglish, setLanguage] = useState(i18n.language === 'en');
 
   const toggleLanguage = () => {
     setLanguage((prev) => !prev);
@@ -16,6 +19,11 @@ const ToggleSwitch = () => {
   const setGerman = () => {
     setLanguage(false);
   };
+
+  useEffect(() => {
+    const language = isEnglish ? 'en' : 'de';
+    i18n.changeLanguage(language);
+  }, [isEnglish]);
 
   return (
     <div className="switch-container">

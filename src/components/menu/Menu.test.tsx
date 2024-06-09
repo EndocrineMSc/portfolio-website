@@ -69,8 +69,8 @@ describe('Menu component', () => {
     render(<Menu />);
 
     fireEvent.click(screen.getByRole('button'));
-    expect(screen.getByText('WORK')).toHaveClass('highlight');
-    expect(screen.getByText('ABOUT')).not.toHaveClass('highlight');
+    expect(screen.getByText('menu.work')).toHaveClass('highlight');
+    expect(screen.getByText('menu.about')).not.toHaveClass('highlight');
   });
 
   it('renders the ToggleSwitch component', () => {

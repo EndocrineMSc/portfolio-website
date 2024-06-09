@@ -7,10 +7,12 @@ import { routes } from '../../route';
 import { useReducer } from 'react';
 import TopBar from '../topBar/TopBar';
 import ToggleSwitch from '../toggleSwitch/ToggleSwitch';
+import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
   const [isVisible, toggleVisible] = useReducer((prev) => !prev, false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const getHighlightStyle = (link: string) => {
     return location.pathname === link ? 'highlight' : '';
@@ -39,7 +41,7 @@ const Menu = () => {
                   to={routes.work}
                   className={getHighlightStyle(routes.work)}
                 >
-                  WORK
+                  {t('menu.work')}
                 </Link>
               </li>
               <li onClick={toggleVisible}>
@@ -47,7 +49,7 @@ const Menu = () => {
                   to={routes.about}
                   className={getHighlightStyle(routes.about)}
                 >
-                  ABOUT
+                  {t('menu.about')}
                 </Link>
               </li>
               <li>

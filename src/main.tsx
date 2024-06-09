@@ -7,6 +7,8 @@ import Work from './pages/work/Work.tsx';
 import About from './pages/about/About.tsx';
 import { routes } from './route.ts';
 
+import '../i18n.ts';
+
 const router = createBrowserRouter([
   {
     path: '/',

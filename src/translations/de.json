@@ -1,0 +1,36 @@
+{
+  "about": {
+    "header": "ÜBER MICH",
+    "p1": "Hallo! Mein Name ist Sebastian und ich bin ein Biologe (MSc) der in die Web-Entwicklung wechselt. Meine bisherige Karriere fand in der Diagnostik-Entwicklung statt, in der ich ausgeprägte anayltische Fähigkeiten auf Aufmerksamkeit zum Detail lernen konnte. Nun habe ich mich entschieden ein neue Karriere in der Web-Entwicklung zu beginnen.",
+    "p2": "Dafür habe ich das Odin Projekt im Selbststudium absolviert, ein open-source Lehrgang für Full-Stack Entwicklung. Durch den Lehrgang habe ich mir ein solides Fundament in Technologien wie React, Express, MongoDB und Node.js aneignen können.",
+    "p3": "Zur Zeit entwickle ich ein Full-Stack Projekt (rpg-adventure-journal), das meine Fähigkeit dynamische Web-Applikationen zu entwickeln zeigen soll. Das Projekt ist ein essentieller Bestandteil meines Portfolios und spiegelt meine technischen Fähigkeiten wieder.",
+    "p4": "Außerdem habe ich mich vor der Web-Entwicklung auch ausgiebig mit Computer-Spiel-Entwicklung beschäftigt. Im Umgang mit Unity (Spiel-Engine) habe ich mir C# beibringen können und habe viel Objekt-orientierten Code geschrieben. Während dieser Spiel-Projekte habe ich meine Liebe zum Programmieren entdeckt und entschlossen, das zu meinem Beruf zu machen.",
+    "p5": "Jetzt möchte ich meinen vielseitigen Hintergrund und meine technischen Fähigkeiten in der Web-Entwicklung zur Geltung bringen. Ich freue mich darauf, interessanten Projekten beizusteuern und konstant weiter in diesem Bereich lernen zu können.",
+    "p6": "Danke, dass Sie sich die Zeit genommen haben, diesen Text zu lesen und mich ein bisschen kennen zu lernen. Ich hoffe auf einen baldigen Kontakt und ein persönliches Gespräch.",
+    "signage": "Mit freundlichen Grüßen,"
+  },
+
+  "menu": {
+    "work": "WERKE",
+    "about": "ÜBER MICH"
+  },
+
+  "work": {
+    "job": "Web-Entwickler",
+    "majinko": {
+      "title": "Majinko",
+      "description": "Ein größerer Prototyp eines Pajinko-ähnlichen Deckbuilders. Kreiert in Unity mit C#. Der komplette Code wurde von mir programmiert. Während ich an diesem Herzens-Projekt gearbeitet habe, konnte ich viel über Object-orientiertes Programmieren und die SOLID-Prinzipien lernen. Das Spiel über itch.io verfügbar. Zusätzlich zu diesem größeren Projekt habe ich über das Jahr 2023 auch an 12 Game Jams teilgenommen. Die so entstandenen Spiele sind ebenfalls auf meinem itch.io Profil zu finden.",
+      "linkText": "Spiel auf itch.io"
+    },
+    "pokegame": {
+      "title": "Poké Memory",
+      "description": "Ein kleines Browser Spiel. Das Spielprojekt war Teil des ODIN project Lehrgangs und sollte den Umgang mit (REST) APIs trainieren. Gemacht mit React/Javascript. Hosting mit Vercel",
+      "linkText": "Spiel-Website"
+    },
+    "calc": {
+      "title": "ODIN Calculator",
+      "description": "Ein sehr simpler Taschenrechner, gemacht mit reinem Javascript, HTML und CSS. Auch dieses Projekt weil Teil des ODIN projects. Hosting mit GitHub Pages. Seit diesem frühen Projekt habe ich einiges an zusätzlichem Wissen lernen können",
+      "linkText": "Taschenrechner-Website"
+    }
+  }
+}

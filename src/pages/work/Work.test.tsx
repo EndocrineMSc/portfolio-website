@@ -16,7 +16,7 @@ describe('Work component', () => {
       'SCHULZ',
     );
     expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent(
-      'Web-Developer',
+      'work.job',
     );
   });
 
