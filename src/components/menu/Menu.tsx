@@ -53,6 +53,14 @@ const Menu = () => {
                 </Link>
               </li>
               <li>
+                <Link to="https://github.com/EndocrineMSc?tab=overview&from=2024-06-01&to=2024-06-09">
+                  GITHUB
+                </Link>
+              </li>
+              <li>
+                <Link to="https://endocrine-bamsc.itch.io/">ITCH.IO</Link>
+              </li>
+              <li>
                 <ToggleSwitch />
               </li>
             </ul>
