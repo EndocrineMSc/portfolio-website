@@ -24,13 +24,13 @@ const ToggleSwitch = () => {
         alt="english"
         onClick={setEnglish}
       />
-      <div
+      <button
         className="switch"
         data-isenglish={isEnglish}
         onClick={toggleLanguage}
       >
         <motion.div className="handle" layout transition={spring}></motion.div>
-      </div>
+      </button>
       <img src="./germany-flag-icon.svg" alt="german" onClick={setGerman} />
     </div>
   );
