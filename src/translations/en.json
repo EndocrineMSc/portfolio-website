@@ -17,6 +17,11 @@
 
   "work": {
     "job": "Web-Developer",
+    "portfolio": {
+      "title": "This portfolio",
+      "description": "I've written this portfolio website using Vite + React + Typescript. Language translations are helped by the i18next library and animations are done with the help of the framer-motion library.",
+      "linkText": "Already here"
+    },
     "majinko": {
       "title": "Majinko",
       "description": "A larger prototype of a Pajinko-like deckbuilder made in Unity using C#. All code was written by me. While working on this passion project, I was able to learn a lot about object-oriented programming. Hosted on itch.io. Besides this larger project I participated in 12 Game Jams to date, the results of which can be found on my itch.io profile.",

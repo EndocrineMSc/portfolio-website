@@ -15,6 +15,14 @@ const Work = () => {
         <h2>{t('work.job')}</h2>
       </div>
       <WorkEntry
+        image="/infinity.jpg"
+        title={t('work.portfolio.title')}
+        description={t('work.portfolio.description')}
+        liveLink=""
+        liveLinkText={t('work.portfolio.linkText')}
+        gitLink="https://github.com/EndocrineMSc/portfolio-website"
+      />
+      <WorkEntry
         image="/majinko.png"
         title={t('work.majinko.title')}
         description={t('work.majinko.description')}

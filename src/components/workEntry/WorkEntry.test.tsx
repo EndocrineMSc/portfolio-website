@@ -16,8 +16,9 @@ describe('WorkEntry component', () => {
     image: 'https://via.placeholder.com/150',
     title: 'Sample Title',
     description: 'Sample Description',
-    link: 'https://example.com',
-    linkText: 'Learn More',
+    liveLink: 'https://example.com',
+    liveLinkText: 'Learn More',
+    gitLink: 'https://example.com',
   };
 
   it('renders without crashing', () => {
@@ -41,9 +42,15 @@ describe('WorkEntry component', () => {
     expect(getByText('Sample Description')).toBeInTheDocument();
   });
 
-  it('renders the link with correct href and text', () => {
+  it('renders the live link with correct href and text', () => {
     const { getByText } = render(<WorkEntry {...props} />);
     const link = getByText('Learn More');
-    expect(link).toHaveAttribute('href', props.link);
+    expect(link).toHaveAttribute('href', props.liveLink);
+  });
+
+  it('renders the git link with correct href and text', () => {
+    const { getByText } = render(<WorkEntry {...props} />);
+    const link = getByText('GitHub');
+    expect(link).toHaveAttribute('href', props.gitLink);
   });
 });

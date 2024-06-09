@@ -33,6 +33,10 @@ h3 {
   justify-content: start;
 }
 
+.image-wrap > img {
+  border-radius: 20px;
+}
+
 .links {
   display: flex;
   justify-content: start;

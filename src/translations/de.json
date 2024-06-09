@@ -17,6 +17,11 @@
 
   "work": {
     "job": "Web-Entwickler",
+    "portfolio": {
+      "title": "Dieses Portfolio",
+      "description": "Das Portfolio habe ich mit Vite + React + Typescript programmiert. Der Sprachwechsel wird unterstützt von der i18next Bibliothek und die Animationen sind mit der framer-motion Bibliothek gemacht worden.",
+      "linkText": "Schon hier"
+    },
     "majinko": {
       "title": "Majinko",
       "description": "Ein größerer Prototyp eines Pajinko-ähnlichen Deckbuilders. Kreiert in Unity mit C#. Der komplette Code wurde von mir programmiert. Während ich an diesem Herzens-Projekt gearbeitet habe, konnte ich viel über Object-orientiertes Programmieren und die SOLID-Prinzipien lernen. Das Spiel über itch.io verfügbar. Zusätzlich zu diesem größeren Projekt habe ich über das Jahr 2023 auch an 12 Game Jams teilgenommen. Die so entstandenen Spiele sind ebenfalls auf meinem itch.io Profil zu finden.",
