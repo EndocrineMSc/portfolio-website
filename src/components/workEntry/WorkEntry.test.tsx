@@ -2,6 +2,15 @@
 import { render } from '@testing-library/react';
 import WorkEntry from './WorkEntry';
 
+vi.mock('framer-motion', () => ({
+  ...vi.importActual('framer-motion'),
+  motion: {
+    div: ({ children }: { children: React.ReactNode }) => (
+      <div className="image-wrap">{children}</div>
+    ),
+  },
+}));
+
 describe('WorkEntry component', () => {
   const props = {
     image: 'https://via.placeholder.com/150',

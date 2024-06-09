@@ -1,6 +1,5 @@
 #root {
   max-width: 1280px;
-  padding: 0.5rem;
   text-align: left;
   font-family: 'Roboto Slab', serif;
 }
@@ -10,6 +9,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  padding: 1rem;
 }
 
 .headers {
