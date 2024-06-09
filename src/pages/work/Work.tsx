@@ -18,22 +18,25 @@ const Work = () => {
         image="/majinko.png"
         title={t('work.majinko.title')}
         description={t('work.majinko.description')}
-        link="https://endocrine-bamsc.itch.io/majinko"
-        linkText={t('work.majinko.linkText')}
+        liveLink="https://endocrine-bamsc.itch.io/majinko"
+        liveLinkText={t('work.majinko.linkText')}
+        gitLink="https://github.com/EndocrineMSc/Majinko"
       />
       <WorkEntry
         image="/pokegame.png"
         title={t('work.pokegame.title')}
         description={t('work.pokegame.description')}
-        link="https://poke-memory-game-kappa.vercel.app/"
-        linkText={t('work.pokegame.linkText')}
+        liveLink="https://poke-memory-game-kappa.vercel.app/"
+        liveLinkText={t('work.pokegame.linkText')}
+        gitLink="https://github.com/EndocrineMSc/poke-memory"
       />
       <WorkEntry
         image="/odincalc.png"
         title={t('work.calc.title')}
         description={t('work.calc.description')}
-        link="https://endocrinemsc.github.io/odin-calculator/"
-        linkText={t('work.calc.linkText')}
+        liveLink="https://endocrinemsc.github.io/odin-calculator/"
+        liveLinkText={t('work.calc.linkText')}
+        gitLink="https://github.com/EndocrineMSc/odin-calculator"
       />
     </div>
   );

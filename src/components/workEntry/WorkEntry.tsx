@@ -5,8 +5,9 @@ interface EntryProps {
   image: string;
   title: string;
   description: string;
-  link: string;
-  linkText: string;
+  liveLink: string;
+  liveLinkText: string;
+  gitLink: string;
 }
 
 const imageVariants: Variants = {
@@ -27,8 +28,9 @@ const WorkEntry = ({
   image,
   title,
   description,
-  link,
-  linkText,
+  liveLink,
+  liveLinkText,
+  gitLink,
 }: EntryProps) => {
   return (
     <div className="workentry">
@@ -43,7 +45,10 @@ const WorkEntry = ({
         <img src={image} alt={title} />
       </motion.div>
       <div className="description">{description}</div>
-      <a href={link}>{linkText}</a>
+      <div className="links">
+        <a href={liveLink}>{liveLinkText}</a>
+        <a href={gitLink}>GitHub</a>
+      </div>
     </div>
   );
 };
