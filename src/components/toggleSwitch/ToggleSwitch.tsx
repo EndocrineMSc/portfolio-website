@@ -6,7 +6,11 @@ import { useEffect } from 'react';
 
 const ToggleSwitch = () => {
   const { i18n } = useTranslation();
-  const [isEnglish, setLanguage] = useState(i18n.language === 'en');
+  console.log(i18n.language);
+  console.log(i18n.language == 'en');
+  const [isEnglish, setLanguage] = useState(
+    i18n.language == 'en' || i18n.language == 'en-US',
+  );
 
   const toggleLanguage = () => {
     setLanguage((prev) => !prev);
