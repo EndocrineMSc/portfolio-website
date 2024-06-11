@@ -13,11 +13,14 @@ interface EntryProps {
 const imageVariants: Variants = {
   offscreen: {
     y: 300,
+    opacity: 0,
   },
   onscreen: {
     y: 0,
+    opacity: 1,
     transition: {
-      type: 'spring',
+      type: 'tween',
+      ease: [0, 0, 0, 1],
       bounce: 0.2,
       duration: 1,
     },
@@ -44,10 +47,12 @@ const WorkEntry = ({
       >
         <img src={image} alt={title} />
       </motion.div>
-      <div className="description">{description}</div>
-      <div className="links">
-        <a href={liveLink}>{liveLinkText}</a>
-        <a href={gitLink}>GitHub</a>
+      <div className="entry-text">
+        <div className="description">{description}</div>
+        <div className="links">
+          <a href={liveLink}>{liveLinkText}</a>
+          <a href={gitLink}>GitHub</a>
+        </div>
       </div>
     </div>
   );
