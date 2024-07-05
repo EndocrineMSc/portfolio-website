@@ -26,7 +26,7 @@ const Work = () => {
         image="/rpg-adventure-journal.png"
         title={t('work.journal.title')}
         description={t('work.journal.description')}
-        liveLink=""
+        liveLink="https://rpg-adventure-journal.vercel.app/"
         liveLinkText={t('work.journal.linkText')}
         gitLink="https://github.com/EndocrineMSc/pnp-frontend"
       />
