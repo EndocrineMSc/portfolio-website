@@ -23,6 +23,14 @@ const Work = () => {
         gitLink="https://github.com/EndocrineMSc/portfolio-website"
       />
       <WorkEntry
+        image="/rpg-adventure-journal.png"
+        title={t('work.journal.title')}
+        description={t('work.journal.description')}
+        liveLink=""
+        liveLinkText={t('work.journal.linkText')}
+        gitLink="https://github.com/EndocrineMSc/pnp-frontend"
+      />
+      <WorkEntry
         image="/majinko.png"
         title={t('work.majinko.title')}
         description={t('work.majinko.description')}
